@@ -1,4 +1,4 @@
- BASE_PATH = './'
+BASE_PATH = './'
 EXAMPLE_PATH = './example.jpg'
 
 # Imports
@@ -38,7 +38,7 @@ learner.unfreeze()
 learner.fit_one_cycle(10, max_lr=slice(1e-3, 1e-5))
 
 # Reduce the learning rate and train some more
-learner.fit_one_cycle(10, max_lr=slice(1e-3, 1e-5))
+learner.fit_one_cycle(10, max_lr=slice(1e-4, 1e-6))
 
 # Grab an example image
 example_image = open_image(Path(EXAMPLE_PATH))
@@ -46,3 +46,6 @@ example_image = open_image(Path(EXAMPLE_PATH))
 # Make a prediction
 predicted_class, _, _ = learner.predict(example_image)
 print(predicted_class)
+
+# Export the model
+learner.export()
