@@ -14,7 +14,7 @@ data_bunch = ImageDataBunch.from_folder(
     path, 
     # Reserve 20 percent of our images for our validation set
     valid_pct=0.2,
-    # The transforms to use (convenience method for us)
+    # Transforms to apply to the image to create variations on our training image
     ds_tfms=get_transforms(max_zoom=1.0), 
     # Dimension of image to process
     size=224,
