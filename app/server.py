@@ -8,7 +8,7 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-export_file_url = 'https://docs.google.com/uc?export=download&id=1qtNkc7nFOTOp_AS7oczSIPQk2BHy1Z5F'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1kjge2veVrajLmk93iOg2Xkx7iFp7ezK0'
 export_file_name = 'yoga_pose.pkl'
 
 classes = ['warrior', 'down_dog', 'low_lunge', 'tree', 'up_dog']
