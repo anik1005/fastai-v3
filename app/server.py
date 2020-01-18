@@ -8,10 +8,10 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1kjge2veVrajLmk93iOg2Xkx7iFp7ezK0'
-export_file_name = 'yoga_pose.pkl'
+export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+export_file_name = 'export.pkl'
 
-classes = ['warrior', 'down_dog', 'low_lunge', 'tree', 'up_dog']
+classes = ['black', 'grizzly', 'teddys']
 path = Path(__file__).parent
 
 app = Starlette()
